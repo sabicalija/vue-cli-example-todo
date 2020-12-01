@@ -15,7 +15,8 @@ export default {
   },
   methods: {
     onClick() {
-      this.$emit("addTodo", this.inputText);
+      // this.$emit("addTodo", this.inputText);
+      this.$store.commit("addTodo", this.inputText);
       this.inputText = "";
     },
   },
